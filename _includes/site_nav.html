@@ -1,0 +1,12 @@
+{% assign profile = site.data.profile %}
+<header class="site-header">
+  <div class="page-shell site-header__inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ profile.name }}</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="{% if page.nav_key == 'about' %}is-active{% endif %}" href="{{ '/' | relative_url }}">About</a>
+      <a class="{% if page.nav_key == 'research' %}is-active{% endif %}" href="{{ '/research/' | relative_url }}">Research</a>
+      <a class="{% if page.nav_key == 'experience' %}is-active{% endif %}" href="{{ '/experience/' | relative_url }}">Experience</a>
+      <a href="{{ profile.resume_file | relative_url }}">{{ profile.resume_label }}</a>
+    </nav>
+  </div>
+</header>

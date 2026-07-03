@@ -1,0 +1,86 @@
+---
+layout: default
+title: Xueying Ding
+nav_key: about
+---
+{% assign profile = site.data.profile %}
+
+<div class="page-shell">
+  <main class="home-layout">
+    <aside class="sidebar">
+      <img class="profile-photo" src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}">
+      <div>
+        <h1 class="profile-name">{{ profile.name }}</h1>
+        <div class="profile-title">{{ profile.title }}</div>
+        <div class="profile-affiliation">{{ profile.affiliation }}</div>
+        <div class="profile-location">{{ profile.location }}</div>
+
+        <ul class="profile-links">
+          <li><a class="icon-link" href="mailto:{{ profile.email }}"><img src="{{ '/assets/icons/email.svg' | relative_url }}" alt=""><span>Email</span></a></li>
+          <li><a class="icon-link" href="{{ profile.resume_file | relative_url }}"><img src="{{ '/assets/icons/cv.svg' | relative_url }}" alt=""><span>{{ profile.resume_label }}</span></a></li>
+          <li><a class="icon-link" href="{{ profile.github }}"><img src="{{ '/assets/icons/github.svg' | relative_url }}" alt=""><span>GitHub</span></a></li>
+          <li><a class="icon-link" href="{{ profile.linkedin }}"><img src="{{ '/assets/icons/linkedin.svg' | relative_url }}" alt=""><span>LinkedIn</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content-column">
+      <section>
+        <h2 class="lead-title">About Me ✨</h2>
+        <div class="lead-copy">{{ profile.bio }}</div>
+
+        {% for paragraph in profile.bio_extended %}
+          <div class="section-copy"><p>{{ paragraph }}</p></div>
+        {% endfor %}
+
+        <div class="section-copy">
+          <p>
+            I am advised by
+            {% for advisor in profile.advisors %}
+              <a href="{{ advisor.url }}">{{ advisor.name }}</a>{% if forloop.last == false %} and {% endif %}
+            {% endfor %}.
+          </p>
+        </div>
+
+        <ul class="interest-list" aria-label="Research interests">
+          {% for interest in profile.research_interests %}
+            <li>{{ interest }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">Recent News</h2>
+        <ul class="news-list">
+          {% for item in profile.news %}
+            <li>
+              <span class="news-date">{{ item.date }}</span>
+              <div class="news-title">{{ item.title }}</div>
+              <div class="news-text">{{ item.text }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2 class="section-title">Experience 💼</h2>
+        <ul class="summary-list">
+          {% for item in site.data.experience limit: 3 %}
+            <li>{{ item.title }}, {{ item.organization }} ({{ item.period }})</li>
+          {% endfor %}
+        </ul>
+        <a class="callout-link" href="{{ '/experience/' | relative_url }}">See full experience →</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© {{ "now" | date: "%Y" }} {{ profile.name }}</div>
+    <ul class="footer-links">
+      <li><a href="mailto:{{ profile.email }}">Email</a></li>
+      <li><a href="{{ profile.github }}">GitHub</a></li>
+      <li><a href="{{ profile.linkedin }}">LinkedIn</a></li>
+      <li><a href="{{ profile.resume_file | relative_url }}">{{ profile.resume_label }}</a></li>
+    </ul>
+  </footer>
+</div>

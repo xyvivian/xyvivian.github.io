@@ -1,0 +1,8 @@
+title: Xueying Ding
+description: Personal academic website for Xueying Ding
+url: "https://xyvivian.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+plugins: []
+collections: {}

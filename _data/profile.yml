@@ -1,0 +1,51 @@
+name: Xueying Ding
+email: xding2@andrew.cmu.edu
+phone: "+1 (901) 355-8092"
+title: Ph.D. Student in Public Policy and Machine Learning
+affiliation: Carnegie Mellon University
+location: Pittsburgh, Pennsylvania
+photo: /ding_xueying_cropped-min.jpg
+resume_label: CV
+resume_file: /xueying_resume.pdf
+github: https://github.com/xyvivian
+linkedin: https://www.linkedin.com/in/your-linkedin-here
+scholar_label: Google Scholar
+scholar_url: "#"
+research_interests:
+  - Outlier detection
+  - Foundation models
+  - LLM evaluation
+  - Information retrieval
+bio: >-
+  I am a Ph.D. student at Carnegie Mellon University working on outlier
+  detection, foundation models, LLM evaluation, and information retrieval.
+  I study how to build reliable learning systems and how to evaluate them
+  carefully across real-world settings.
+bio_extended:
+  - >-
+    My work focuses on robust outlier detection, foundation models for
+    structured data, evaluation of LLM behavior and consistency, and retrieval
+    methods that improve information access in long-context and open-domain
+    settings.
+news:
+  - date: May 2026
+    title: "🎉 Our papers"
+    text: >-
+      "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9EmMaEAAAAJ&sortby=pubdate&citation_for_view=o9EmMaEAAAAJ:_kc_bZDykSQC">Threshold Differential Attention for Sink-Free, Ultra-Sparse, and Non-Dispersive Language Modeling</a>"
+      and "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9EmMaEAAAAJ&sortby=pubdate&citation_for_view=o9EmMaEAAAAJ:YOwf2qJgpHMC">Hierarchical token prepending: Enhancing information flow in decoder-based llm embeddings</a>"
+      are accepted to ACL 2026 main track, with oral presentations!
+  - date: May 2026
+    title: "🎉 Our paper"
+    text: >-
+      "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9EmMaEAAAAJ&sortby=pubdate&citation_for_view=o9EmMaEAAAAJ:IjCSPb-OGe4C">MacrOData: New Benchmarks of Thousands of Datasets for Tabular Outlier Detection</a>"
+      is accepted to KDD 2026 Dataset and Benchmark Track!
+  - date: Apr 2026
+    title: "🎉 Our paper"
+    text: >-
+      "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o9EmMaEAAAAJ&sortby=pubdate&citation_for_view=o9EmMaEAAAAJ:2osOgNQ5qMEC">From Zero to Hero: Advancing Zero-Shot Foundation Models for Tabular Outlier Detection</a>"
+      is accepted to ICML 2026 as a poster!
+advisors:
+  - name: Leman Akoglu
+    url: https://www.andrew.cmu.edu/user/lakoglu/
+  - name: Pradeep Ravikumar
+    url: https://www.cs.cmu.edu/~pradeepr/

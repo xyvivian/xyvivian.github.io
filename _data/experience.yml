@@ -1,0 +1,35 @@
+- title: Research Intern
+  organization: UMAP, Snap Research
+  location: Bellevue, WA
+  period: May 2025 - Present
+  summary: >-
+    Studying decoder-only LLMs as general-purpose embedding models, with recent
+    work on information flow, retrieval quality, long-context reasoning, and
+    sparse attention mechanisms.
+  bullets:
+    - Proposed Hierarchical Token Prepending, a training-free method that improves decoder-based LLM embeddings on retrieval and general embedding benchmarks.
+    - Investigated RLVR-based search agents and LLM-driven query rewriting for open-domain retrieval and recommendation settings.
+    - Collaborated on Threshold Differential Attention, a sink-free sparse attention mechanism for long-context language models.
+- title: Quant Research Intern
+  organization: Bloomberg
+  location: New York City, NY
+  period: May 2024 - Aug 2024
+  summary: >-
+    Worked on finance-oriented time-series foundation models and studied
+    pre-training and adaptation strategies for noisy, multi-frequency financial
+    signals.
+  bullets:
+    - Developed Delphyne, a finance-oriented pre-trained model for financial time series.
+    - Investigated negative transfer in time-series pre-training and finance-aware adaptation strategies.
+    - Evaluated downstream performance on return prediction, log-volume forecasting, volatility modeling, and broader forecasting benchmarks.
+- title: Research Intern
+  organization: Capital One
+  location: McLean, VA
+  period: Jun 2022 - Aug 2022
+  summary: >-
+    Built human-interpretable anomaly detection tools for high-dimensional
+    streaming financial data.
+  bullets:
+    - Developed explainable XStream for unsupervised fraud detection in streaming bank data.
+    - Integrated feature importance, counterfactual reasoning, and group anomaly explanation tools.
+    - Built a prototype human-in-the-loop interface for analyst investigation and feedback.
